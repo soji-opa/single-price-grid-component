@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  :root {
+    --clr-cyan: hsl(179, 62%, 43%);
+    --clr-bryellow: hsl(71, 73%, 54%);
+    --clr-ltgrey: hsl(204, 43%, 93%);
+    --clr-gyblue: hsl(218, 22%, 67%);
+    --clr-white: hsl(0, 0%, 100%);
+}
+  
+body {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    min-height: 100vh;
+    background-color: var(--clr-gyblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}  
+
+h1,
+h2, h3{
+    line-height: 1.1;
+    margin-bottom: 1em;
+}
+  
+p{
+    line-height: 1.6;
+    color: var(--clr-ltgrey);
+    font-size: 14px;
+    /* margin-bottom: 1.5em; */
+}
+  
+main{
+    padding: 0 1em;
+    border-radius: 10px;
+}
+
+.product__section{
+    background-color: var(--clr-ltgrey);
+    padding: 2em;
+    border-radius: 10px 10px 0 0;
+}
+
+.product__section h1{
+    color: var(--clr-cyan);
+}
+
+.product__section h2{
+    color: var(--clr-bryellow);
+    font-size: 20px;
+}
+
+.product__section p{
+    color: var(--clr-gyblue);
+}
+
+.product__aside1{
+    background-color: var(--clr-cyan);
+    padding: 2em;
+}
+
+.product__aside1 h3{
+    color: var(--clr-ltgrey);
+    font-weight: 400;
+}
+
+.mini-prod{
+    display: flex;
+    align-items: center;
+    gap: 0.9em;;
+}
+
+.mini-prod p:first-of-type{
+    color: var(--clr-ltgrey);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+button{
+    display: block;
+    width: 100%;
+    padding: 1em;
+    margin-top: 14px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--clr-bryellow);
+    color: var(--clr-ltgrey);
+    font-family: 'Karla';
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.product__aside2{
+    background-color: var(--clr-cyan);
+    padding: 2em;
+    border-radius: 0 0 10px 10px;
+}
+
+.product__aside2 h3{
+    color: var(--clr-ltgrey);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@media (min-width: 565px ){
+    main{
+        max-width: 600px
+    }
+    section{
+        display: flex;
+    }
+    .product__aside1{
+        width: 50%;
+        border-radius: 0 0 0 10px;
+    }
+    .product__aside2{
+        width: 50%;
+        border-radius: 0 0 10px 0;
+    }
+    button{
+        margin-top: 35px;
+    }
+}
